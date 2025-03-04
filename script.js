@@ -1,5 +1,11 @@
 function makeid(l) {
-  // write your code here
+     let str = '';
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    for (let i = 0; i < l; i++) {
+        str += chars[Math.floor(Math.random() * chars.length)];
+    }
+
+    return str;
 }
 
 // Do not change the code below.
